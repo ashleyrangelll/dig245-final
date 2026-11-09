@@ -1,20 +1,280 @@
 <!doctype html>
 <html lang="en">
 <head>
-    <!-- meta tags, links to css, etc. -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Final Project</title>
+    <title>Digital Doppelganger Quiz</title>
     <link rel="stylesheet" href="assets/css/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
 </head>
 
 <body>
 
-    <!-- visible content goes here -->
-	<h1>Final Project</h1>
-	<p>See README.md for info</p>
+<div class="topNav">
 
-    <!-- load javascript after the page elements render -->
-    <script src="assets/js/main.js"></script>
+	<div class= "logoNText">
+		<a href="index.html">
+			<div class="logoText">
+				<h3>Q + ME</h3>
+			</div>
+		</a>
+	</div>
+
+	<div>
+
+				<a href="index.html">
+					<h3>HOME ></h3>
+				</a>
+
+				<a href="index.html">
+					<h3>TAKE A QUIZ ></h3>
+				</a>
+	</div>		
+
+</div>
+
+	<div class="titleBar">
+
+		<div class="titleText">
+			<ul><h2>Who is your Digital Doppelganger?</h2><ul>
+			<ul><p>Find out who your algorithm thinks you are by taking the quiz below!</p><ul>
+		</div>
+
+	</div>
+
+<!-- [AI-Assisted: Copilot SDK | 2026-11-09] Intent: Align quiz choices and image labels with the Digital Doppelganger quiz. -->
+<form>
+	<div class="grid">
+
+		<div class="questionBanner">
+			<h3>PICK A SOCIAL MEDIA:</h3>			
+		</div>
+
+		<div class="sectionWrapper">
+
+			<div class="sections">
+				<input type="radio" name="socialMedia" value="tiktok" id="tiktok" class="input-hidden" onchange="getAnswers()"/>
+				<label for="tiktok">
+  					<img src="https://cdn.simpleicons.org/tiktok" alt="TikTok logo">
+					<span class="choiceText">TikTok</span>
+				</label>
+			</div>
+
+			<div class="sections">
+				<input type="radio" name="socialMedia" value="insta" id="insta" class="input-hidden" onchange="getAnswers()"/>
+				<label for="insta">
+					<img src="https://cdn.simpleicons.org/instagram" alt="Instagram logo">
+					<span class="choiceText">Instagram</span>
+				</label>
+			</div>
+
+			<div class="sections">
+				<input type="radio" name="socialMedia" value="strava" id="strava" class="input-hidden" onchange="getAnswers()"/>
+				<label for="strava">
+					<img src="https://cdn.simpleicons.org/strava" alt="Strava logo">
+					<span class="choiceText">Strava</span>
+				</label>
+			</div>
+
+			<div class="sections">
+				<input type="radio" name="socialMedia" value="facebook" class="input-hidden" id="facebook" onchange="getAnswers()"/>
+				<label for="facebook">
+					<img src="https://cdn.simpleicons.org/facebook" alt="Facebook logo">
+					<span class="choiceText">Facebook</span>
+				</label>
+			</div>
+
+			
+		</div>
+
+	</div>
+
+
+	<div class="grid">
+		<div class="questionBanner">
+			<h3>Which photo looks like where you live?</h3>			
+		</div>
+
+		<div class="sectionWrapper">
+
+			<div class="sections">
+				<input type="radio" name="landscape" value="beach" id="beach" class="input-hidden" onchange="getAnswers()"/>
+				<label for="beach">
+					<img src="https://images.unsplash.com/photo-1525968635328-37e2ce22d2d2?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=e3dc43c71302c88d8939a94b6e15c687&auto=format&fit=crop&w=800&q=60" alt="Beach">
+					<span class="choiceText">Beach</span>
+				</label>
+			</div>
+
+			<div class="sections">
+				<input type="radio" name="landscape" value="city" id="city" class="input-hidden" onchange="getAnswers()"/>
+				<label for="city">				
+					<img src="https://images.unsplash.com/photo-1503642551022-c011aafb3c88?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=e402f612efd271ac52647651246a2cd9&auto=format&fit=crop&w=800&q=60" alt="City">
+					<span class="choiceText">City</span>
+				</label>
+			</div>
+
+			<div class="sections">
+				<input type="radio" name="landscape" value="country" id="country" class="input-hidden" onchange="getAnswers()"/>
+				<label for="country">
+					<img src="https://images.unsplash.com/photo-1501791330673-603715379ded?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=3a52bc4e101f33cbf1fd42e9c1604e02&auto=format&fit=crop&w=2700&q=80" alt="Country">
+					<span class="choiceText">Country</span>
+				</label>
+			</div>
+
+			<div class="sections">
+				<input type="radio" name="landscape" value="suburbs" id="suburbs" class="input-hidden" onchange="getAnswers()"/>
+				<label for="suburbs">
+					<img src="https://images.unsplash.com/photo-1449844908441-8829872d2607?auto=format&fit=crop&w=800&q=60" alt="Suburban neighborhood">
+					<span class="choiceText">Suburbs</span>
+				</label>
+			</div>
+		</div>
+	</div>
+
+
+	<div class="grid">
+
+		<div class="questionBanner">
+			<h3>Pick an Amazon order:</h3>			
+		</div>
+
+		<div class="sectionWrapper">
+
+			<div class="sections">
+				<input type="radio" name="amazonOrder" value="squishies" id="squishies" class="input-hidden" onchange="getAnswers()"/>
+				<label for="squishies">
+					<img src="https://images.unsplash.com/photo-1596461404969-9ae70f2830c1?auto=format&fit=crop&w=800&q=60" alt="Squishy toys">
+					<span class="choiceText">Squishies</span>
+				</label>
+			</div>
+
+			<div class="sections">
+				<input type="radio" name="amazonOrder" value="airpods" id="airpods" class="input-hidden" onchange="getAnswers()"/>
+				<label for="airpods">
+					<img src="https://images.unsplash.com/photo-1606220945770-b5b6c2c55bf1?auto=format&fit=crop&w=800&q=60" alt="Wireless earbuds">
+					<span class="choiceText">AirPods</span>
+				</label>
+			</div>
+
+			<div class="sections">
+				<input type="radio" name="amazonOrder" value="smoker-grill" id="smoker-grill" class="input-hidden" onchange="getAnswers()"/>
+				<label for="smoker-grill">
+					<img src="https://images.unsplash.com/photo-1529193591184-b1d58069ecdd?auto=format&fit=crop&w=800&q=60" alt="Smoker grill">
+					<span class="choiceText">Smoker grill</span>
+				</label>
+			</div>
+
+			<div class="sections">
+				<input type="radio" name="amazonOrder" value="amazon-echo" id="amazon-echo" class="input-hidden" onchange="getAnswers()"/>
+				<label for="amazon-echo">
+					<img src="https://images.unsplash.com/photo-1543512214-318c7553f230?auto=format&fit=crop&w=800&q=60" alt="Amazon Echo smart speaker">
+					<span class="choiceText">Amazon Echo</span>
+				</label>
+			</div>
+		</div>
+
+	</div>
+
+
+	<div class="grid">
+
+		<div class="questionBanner">
+			<h3>Pick an activity</h3>			
+		</div>
+
+		<div class="sectionWrapper">
+
+			<div class="sections">
+				<input type="radio" name="activity" value="doomscrolling" id="doomscrolling" class="input-hidden" onchange="getAnswers()"/>
+				<label for="doomscrolling">
+					<img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=800&q=60" alt="Person scrolling on a phone">
+					<span class="choiceText">Doomscrolling</span>
+				</label>
+			</div>
+
+			<div class="sections">
+				<input type="radio" name="activity" value="friends" id="friends" class="input-hidden" onchange="getAnswers()"/>
+				<label for="friends">
+					<img src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&w=800&q=60" alt="Friends spending time together">
+					<span class="choiceText">Being with friends</span>
+				</label>
+			</div>
+
+			<div class="sections">
+				<input type="radio" name="activity" value="outside" id="outside" class="input-hidden" onchange="getAnswers()"/>
+				<label for="outside">
+					<img src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&fit=crop&w=800&q=60" alt="Outdoor scenery">
+					<span class="choiceText">Being outside</span>
+				</label>	
+			</div>
+
+			<div class="sections">
+				<input type="radio" name="activity" value="family" id="family" class="input-hidden" onchange="getAnswers()"/>
+				<label for="family">
+					<img src="https://images.unsplash.com/photo-1511895426328-dc8714191300?auto=format&fit=crop&w=800&q=60" alt="Family spending time together">
+					<span class="choiceText">Being with family</span>
+				</label>
+			</div>
+		</div>
+	</div>
+
+	<div class="grid">
+
+		<div class="questionBanner">
+			<h3>What age is your soul?</h3>			
+		</div>
+
+		<div class="sectionWrapper">
+
+			<div class="sections">
+				<input type="radio" name="soulAge" value="teens" id="teens" class="input-hidden" onchange="getAnswers()"/>
+				<label for="teens">
+					<img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=800&q=60" alt="Teen soul age">
+					<span class="choiceText">Teens</span>
+				</label>
+			</div>
+
+			<div class="sections">
+				<input type="radio" name="soulAge" value="20s-30s" id="20s-30s" class="input-hidden" onchange="getAnswers()"/>
+				<label for="20s-30s">
+					<img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=800&q=60" alt="Soul age in the 20s to 30s">
+					<span class="choiceText">20s-30s</span>
+				</label>
+			</div>
+
+			<div class="sections">
+				<input type="radio" name="soulAge" value="40s-50s" id="40s-50s" class="input-hidden" onchange="getAnswers()"/>
+				<label for="40s-50s">
+					<img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=800&q=60" alt="Soul age in the 40s to 50s">
+					<span class="choiceText">40s-50s</span>
+				</label>
+			</div>
+
+			<div class="sections">
+				<input type="radio" name="soulAge" value="60-plus" id="60-plus" class="input-hidden" onchange="getAnswers()"/>
+				<label for="60-plus">
+					<img src="https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?auto=format&fit=crop&w=800&q=60" alt="Soul age 60 or older">
+					<span class="choiceText">60+</span>
+				</label>
+			</div>
+		</div>
+	</div>
+
+</form>
+
+	<div>
+		<div class="questionBanner">
+			<h3 id="resultHeader"></h3>			
+		</div>
+
+			<div class="result">
+				<div class="resultImgBlock">
+					<img src="" id="resultImg" alt="Your digital doppelganger result">
+				</div>
+			</div>
+
+	</div>
+	<script src="assets/js/main.js"></script>
 </body>
 </html>
