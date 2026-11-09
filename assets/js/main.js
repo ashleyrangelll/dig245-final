@@ -170,7 +170,7 @@ function getAnswers() {
     } else if (mostPicked == 0) {
       resultHeader.innerHTML = "YOU GOT: KIM KARDASHIAN";
       resultImg.src =
-        "https://images.unsplash.com/photo-1531218150217-54595bc2b934?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=7cf9e788a332a736734044e1ed74a283&auto=format&fit=crop&w=800&q=60";
+        "assets/img/Kim Kardashian jpg.jpg";
     }
   }
 
