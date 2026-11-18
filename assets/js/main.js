@@ -133,40 +133,40 @@ function getAnswers() {
         mostPicked = counterCheck[i];
         switch (counterCheck[i]) {
           case counterCheck[0]:
-            resultHeader.innerHTML = "YOU GOT: THE RIZZLER";
+            resultHeader.innerHTML = "YOU GOT: JAKE";
             resultImg.src =
-              "assets/img/the rizzler jpg.jpg";
+              "assets/img/111Jake.jpg";
             break;
 
           case counterCheck[1]:
-            resultHeader.innerHTML = "YOU GOT: ZENDAYA";
+            resultHeader.innerHTML = "YOU GOT: GINA";
             resultImg.src =
-              "assets/img/Zendaya jpg.jpg";
+              "assets/img/111Gina.jpg";
             break;
 
           case counterCheck[2]:
-            resultHeader.innerHTML = "YOU GOT: THE ROCK";
+            resultHeader.innerHTML = "YOU GOT: TERRY";
             resultImg.src =
-              "assets/img/the rock jpg.jpg";
+              "assets/img/111Terry.jpg";
             break;
 
           case counterCheck[3]:
-            resultHeader.innerHTML = "YOU GOT: MERYL STREEP";
+            resultHeader.innerHTML = "YOU GOT: RAYMOND";
             resultImg.src =
-              "assets/img/meryl streep jpg.jpg";
+              "assets/img/111Raymond.jpg";
             break;
         }
       }
     }
 
     if (counterCheck[0] == max && counterCheck[1] == max) {
-      resultHeader.innerHTML = "YOU GOT: TAYLOR SWIFT";
+      resultHeader.innerHTML = "YOU GOT: AMY";
       resultImg.src =
-        "https://images.unsplash.com/photo-1516906346363-f61cc0219b22?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=e2de3b723eb67152127d1738f2b86df7&auto=format&fit=crop&w=800&q=60";
+        "assets/img/111Amy.jpg";
     } else if (counterCheck[2] == max && counterCheck[3] == max) {
-      resultHeader.innerHTML = "YOU GOT: RIHANNA";
+      resultHeader.innerHTML = "YOU GOT: ROSA";
       resultImg.src =
-        "https://images.unsplash.com/photo-1515565324614-5b1976a7ada9?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=d2ed0bb617d30b964e9565121960aecd&auto=format&fit=crop&w=800&q=60";
+        "assets/img/111Rosa.jpg";
     } else if (mostPicked == 0) {
       resultHeader.innerHTML = "YOU GOT: KIM KARDASHIAN";
       resultImg.src =

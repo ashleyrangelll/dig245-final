@@ -2,7 +2,7 @@
 /* css */
 html {
 
-	background: #070243;
+	background: #024061;
 	margin: auto;
 }
 
@@ -11,14 +11,14 @@ a {
 }
 
 h1 {
-	font-family: "Montserrat", "Verdana";
+	font-family: "Helvetica", "Verdana";
 	text-align: center;
 	font-size: 12vh;
 	margin: 0;
 }
 
 h2 {
-	font-family: "Lato", "Open Sans";
+	font-family: "Helvetica", "Open Sans";
 	font-size: 4vw;
 	text-align: right;
 	padding-right: 5vw;
@@ -37,7 +37,7 @@ h2 {
 	padding: 5vh 2vh 0vh 2vh;
 	display: inline-block;
 	clear: right;
-	color: white;
+	color: rgb(0, 0, 0);
 	font-family: "Lato", "Open Sans";
 	font-size: 150%;
 	margin: 0;
@@ -57,7 +57,7 @@ h2 {
 }
 
 .titleBar {
-	background-image: url("assets/img/Background Image CSS.jpg");
+	background-image:url("assets/img/Background Image CSS.jpg");
 	object-fit: cover;
 	background-size: 100%;
 	padding: 4vh 0 4vh 0;
@@ -68,9 +68,9 @@ h2 {
 }
 
 .titleText {
-	background-color: white;
-	opacity: 0.8;
-	color: #909090;
+	background-color: #fbec02;
+	opacity: 1;
+	color: #000000;
 	width: 80%;
 	z-index: 2;
 	display: inline-block;
@@ -85,7 +85,7 @@ h2 {
 }
 
 .titleText h3 {
-	color: #909090;
+	color: #020202;
 	text-align: right;
 	padding-right: 6vw;
 	margin: 0;
@@ -115,7 +115,7 @@ h2 {
 
 input[type=radio]:checked + label>img {
   border: 1vw solid rgb(0, 53, 128);
-  box-shadow: 0.5vh 0.5vh 0.1vmax #FFFFFF;
+  box-shadow: 0.5vh 0.5vh 0.1vmax rgb(255, 255, 56);
 
  
 }
@@ -123,14 +123,14 @@ input[type=radio]:checked + label>img {
 
 .questionBanner {
 	font-family: "Lato", "Open Sans";
-	background-color: #bb9d5b;
+	background-color: rgb(27, 107, 147);
 	padding: 1vh 0 1vh 2vh;
 	margin: 4vh 0 4vh 4vh;
 	width: 100%;
 	text-align: left;
 	font-size: 2vw;
 	display: inline-block;
-	color: white;
+	color: rgb(0, 0, 0);
 
 }
 
@@ -160,7 +160,7 @@ input[type=radio]:checked + label>img {
 	justify-content: space-between;
 	border-radius: 13%;
 	height: 70%;
-	box-shadow: 1vh 1vh 0.2vmax #FFFFFF;
+	box-shadow: 1vh 1vh 0.2vmax rgb(255, 255, 56);
 	object-fit: cover;
 }
 
@@ -177,7 +177,7 @@ input[type=radio]:checked + label>img {
 }
 
 .choiceText {
-	color: white;
+	color: rgb(254, 254, 254);
 	font-family: "Lato", "Open Sans";
 	font-size: clamp(0.75rem, 1.2vw, 1rem);
 	line-height: 1.1;
@@ -186,7 +186,7 @@ input[type=radio]:checked + label>img {
 
 .sections:hover img {
 	opacity: 0.3;
-	box-shadow: 1vh 1vh 0.2vmax rgb(34, 0, 128);
+	box-shadow: 1vh 1vh 0.2vmax rgb(0, 117, 128);
 }
 
 .result {
